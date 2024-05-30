@@ -24,22 +24,22 @@ export default function Component() {
         </a>
         
       </header>
-    <Card className="mx-auto max-w-sm">
+    <Card className="mx-auto max-w-sm border-gray-500">
       <CardHeader>
-        <CardTitle className="text-2xl">Forgot Password</CardTitle>
-        <CardDescription>Enter your email to reset your password.</CardDescription>
+        <CardTitle className="text-3xl text-center">Forgot Password</CardTitle>
+        <CardDescription className="text-m text-center">Send reset link to your registered email address</CardDescription>
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="space-y-2">
           <Label htmlFor="email">Email</Label>
           <Input id="email" placeholder="m@example.com" required type="email" />
         </div>
-        <Button className="w-full" type="submit">
+        <Button className="  rounded-lg bg-gradient-to-r from-[#6366F1] to-[#EC4899]  w-full py-3 text-center font-medium text-white shadow-lg shadow-[#6366F1]/50 transition-all duration-300 ease-in-out hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6366F1] focus-visible:ring-offset-2 dark:shadow-[#EC4899]/50">
           Reset Password
         </Button>
       </CardContent>
       <CardFooter className="text-center">
-        <a className="text-sm underline" href="http://localhost:5173/sign-up">
+        <a className="text-sm underline" href="http://localhost:5173">
           Back to Sign In
         </a>
       </CardFooter>

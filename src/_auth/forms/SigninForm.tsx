@@ -3,7 +3,7 @@
  * @see https://v0.dev/t/d0yrSZ9SlmS
  * Documentation: https://v0.dev/docs#integrating-generated-code-into-your-nextjs-app
  */
-import { CardTitle, CardDescription, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card"
+import { CardTitle, CardHeader, CardContent, CardFooter, Card } from "@/components/ui/card"
 import { Label } from "@/components/ui/label"
 import { Input } from "@/components/ui/input"
 import { Button } from "@/components/ui/button"
@@ -16,7 +16,8 @@ import { JSX } from "react/jsx-runtime"
 export default function Component() {
   return (
     <>
-          <header className="fixed top-0 left-0 right-0 z-50 flex h-16 w-full items-center justify-between bg-gray-950 px-4 md:px-6">
+    <div className="">
+      <header className="fixed top-0 left-0 right-0 z-50 flex h-16 w-full items-center justify-between bg-gray-950 px-4 md:px-6">
       <img 
         src="assets/images/logo.svg"
         alt = "logo"
@@ -30,17 +31,17 @@ export default function Component() {
           <div className="text-sm font-medium text-gray-50">Not a user ?</div>
           <a
             className="inline-flex h-9 items-center justify-center rounded-md bg-gray-50 px-4 py-2 text-sm font-medium text-gray-900 shadow-sm transition-colors hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-gray-950 focus:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 dark:bg-gray-900 dark:text-gray-50 dark:hover:bg-gray-800 dark:focus:ring-gray-300"
-            href="http://localhost:5173/sign-up"
+            href="http://localhost:5173"
 
           >
             Sign Up
           </a>
         </div>
       </header>
-    <Card className="mx-auto max-w-sm">
+      <br></br><br></br>
+    <Card className="mx-auto max-w-sm  shadow-2xl shadow-[#6366F1]/50">
       <CardHeader>
-        <CardTitle className="text-2xl">Sign In</CardTitle>
-        <CardDescription>Enter your email and password to access your account.</CardDescription>
+        <CardTitle className="text-5xl text-center">Sign In</CardTitle>
       </CardHeader>
       <CardContent className="space-y-4">
         <div className="space-y-2">
@@ -51,9 +52,9 @@ export default function Component() {
           <Label htmlFor="password">Password</Label>
           <Input id="password" placeholder="••••••••" required type="password" />
         </div>
-        <Button className="w-full" type="submit">
+        <button className="  rounded-lg bg-gradient-to-r from-[#6366F1] to-[#EC4899]  w-full py-3 text-center font-medium text-white shadow-lg shadow-[#6366F1]/50 transition-all duration-300 ease-in-out hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6366F1] focus-visible:ring-offset-2 dark:shadow-[#EC4899]/50">
           Sign In
-        </Button>
+        </button>
         <Separator className="my-4" />
         <div className="space-y-2">
           <Button className="w-full" variant="outline">
@@ -66,13 +67,14 @@ export default function Component() {
           </Button>
         </div>
       </CardContent>
-      <CardFooter className="text-center">
+      <CardFooter>
         <a className="text-sm underline" href="http://localhost:5173/forgot-password">
           Forgot password?
         </a>
       </CardFooter>
       
     </Card>
+    </div>
     </>
   )
 }

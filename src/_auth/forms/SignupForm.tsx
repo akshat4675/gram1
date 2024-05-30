@@ -4,7 +4,6 @@ import { Button } from "@/components/ui/button"
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
@@ -44,9 +43,9 @@ const SignupForm = () => {
       <main className="pt-16" />
      <Card className="mx-auto max-w-md shadow-lg shadow-gray-200/50 dark:shadow-gray-800/50 rounded-lg">
       <CardHeader>
-        <CardTitle className="text-2xl align-"><h1>Sign Up</h1></CardTitle>
-        <CardDescription>Create your account to get started.</CardDescription>
+        <CardTitle className=" text-5xl   text-center"><h1>Sign Up</h1></CardTitle>
       </CardHeader>
+      <br></br>
       <CardContent>
         <form className="space-y-4">
           <div className="grid gap-2">
@@ -61,9 +60,9 @@ const SignupForm = () => {
             <Label htmlFor="password">Password</Label>
             <Input id="password" placeholder="Enter a password" required type="password" />
           </div>
-          <Button className="w-full" type="submit">
-            Create Account
-          </Button>
+          <button className="  rounded-lg bg-gradient-to-r from-[#6366F1] to-[#EC4899]  w-full py-3 text-center font-medium text-white shadow-lg shadow-[#6366F1]/50 transition-all duration-300 ease-in-out hover:scale-105 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#6366F1] focus-visible:ring-offset-2 dark:shadow-[#EC4899]/50">
+          Create Account
+        </button>
           <div className="flex items-center justify-center space-x-2">
             <Button className="w-full" variant="outline">
               <ChromeIcon className="h-5 w-5 mr-2" />
